@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "useful-echo-shards",
+  "version": "${version}",
+  "name": "Useful Echo Shards",
+  "description": "Allows Echo Shards to repair any item in an anvil without increasing its repair cost.",
+  "authors": [
+    "Nova1733"
+  ],
+  "contact": {
+    "issues": "https://github.com/Nova1733/Useful-Echo-Shards/issues",
+    "sources": "https://github.com/Nova1733/Useful-Echo-Shards"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/useful-echo-shards/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.nova1733.usefulEchoShards.client.UsefulEchoShardsDataGenerator"
+    ],
+    "client": [
+      "me.nova1733.usefulEchoShards.client.UsefulEchoShardsClient"
+    ],
+    "main": [
+      "me.nova1733.usefulEchoShards.UsefulEchoShards"
+    ]
+  },
+  "mixins": [
+    "useful-echo-shards.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

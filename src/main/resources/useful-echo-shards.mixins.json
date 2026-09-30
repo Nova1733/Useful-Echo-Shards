@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.nova1733.usefulEchoShards.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "AnvilMenuMixin",
+    "RepairableMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
