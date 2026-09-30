@@ -17,8 +17,8 @@ public class UsefulEchoShards implements ModInitializer {
         LootTableEvents.MODIFY.register((key, original, source, _) -> {
             if (source.isBuiltin() && key.equals(BuiltInLootTables.ANCIENT_CITY)) {
                 LootPool.Builder pool = LootPool.lootPool()
-                        .add(LootItem.lootTableItem(Items.ECHO_SHARD).setWeight(2))
-                        .apply(SetItemCountFunction.setCount(ContextIntProviders.between(1, 3)));
+                        .add(LootItem.lootTableItem(Items.ECHO_SHARD).setWeight(3))
+                        .apply(SetItemCountFunction.setCount(ContextIntProviders.between(1, 4)));
                 original.withPool(pool);
             }
         });
