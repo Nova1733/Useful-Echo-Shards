@@ -1,3 +1,4 @@
+# Useful Echo Shards
 Normally, Echo Shards are almost completely useless, especially for an item obtained from a structure like the Ancient City. This mod attempts to make them useful in a vanilla-like way by allowing them to be used to repair any item in an anvil without increasing its repair cost.
 
 # Details
